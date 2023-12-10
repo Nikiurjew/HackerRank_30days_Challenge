@@ -1,0 +1,50 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+    int T= sc.nextInt();
+    sc.nextLine();
+
+
+    for(int k=0; k <T; k++){
+
+     String  S = sc.nextLine();
+
+      String sEven = "";
+      String sOdd = "";    
+
+for(int i=0; i < S.length(); i++){
+
+      char [] arr1  = new char [S.length()];
+      char [] arr2  = new char [S.length()];
+
+    if(i % 2 == 0){
+     arr1[i] = S.charAt(i);
+     sEven += arr1[i];
+
+    }else {
+     arr2[i] = S.charAt(i);
+     sOdd += arr2[i];
+
+    }
+
+
+}
+ System.out.println(sEven + " " + sOdd);
+
+
+
+
+    }
+
+        
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
